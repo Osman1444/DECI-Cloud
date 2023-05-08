@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Kanit', sans-serif;
+            height: 500vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: 2s ease-out;
+        }
+
+        main{
+            background-image: url("Source/BG.jpg");
+            background-size: cover;
+            position: absolute;
+            top: 12.5vh;
+            left: 0;
+            height: 93vh;
+            width: 100vw;
+        }
+
+        nav{
+            height: 12.5vh;
+            width: 100vw;
+            background-color: rgb(241, 241, 241);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: 0.5s ease-out;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        /* Window------------------------------------------ */
+        .Head {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 2vw;
+            width: 18vw;
+        }
+
+        .Links{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 40vw;
+            padding-left: 35vw;
+        }
+
+        /* photo------------------------------------------- */
+        .Logo{
+            border-radius: 50%;
+            width: 5vw;
+            height: 5vw;
+            display: inline;
+            border: 0px solid #000000;
+        }
+
+
+        /* buttons----------------------------------------- */
+        
+        .Links > button{
+            width: 12vw;
+            height: 7vh;
+            background-color: #cecece;
+            border-radius: 2rem;
+            color: #df0a2e;
+            font-size: 150%;
+            font-weight: 250%;
+            border: 0;
+            transition: 0.5s;
+        }
+        .Links > button:hover{
+            background-color: #df0a2e;
+            color: #535353;
+        }
+
+        /* text-------------------------------------------- */
+        h1{
+            color: #272727aa;
+        }
+
+        #Title{
+            font-size: 200%;
+            display: inline;
+        }
+
+        .Links > a{
+            color: #3b3b3b;
+            font-size: 125%;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: 0.5s;
+        }
+
+        .Links > a:hover{
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECI Cloud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+    <section class="Head">
+        <img class="Logo" src="Source/Logo.png">
+        <h1 id="Title">DECI Cloud</h1>
+    </section>
+    <section class="Links">
+        <a href="#Home">Home</a>
+        <a href="#Service">Service</a>
+        <a href="#About_us">About us</a>
+        <a href="#Pricing">Pricing</a>
+        <button>Get Started</button>
+    </section>
+    </nav>
+    <main id="Home"></main>
+    <footer></footer>
+</body>
+</html>
