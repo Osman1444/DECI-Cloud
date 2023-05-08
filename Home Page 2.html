@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <style>
+        html {
+           scroll-behavior: smooth;
+        }
         body{
             font-family: 'Kanit', sans-serif;
             height: 500vh;
@@ -32,17 +35,10 @@
             display: flex;
             align-items: center;
             flex-direction: row;
+            z-index: 1000;
         }
 
         /* Window------------------------------------------ */
-        .Head {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-            padding-left: 2vw;
-            width: 18vw;
-        }
 
         .Links{
             display: flex;
@@ -55,11 +51,10 @@
 
         /* photo------------------------------------------- */
         .Logo{
-            border-radius: 50%;
-            width: 5vw;
-            height: 5vw;
+            width: 5%;
             display: inline;
-            border: 0px solid #000000;
+            border-radius: 50%;
+            padding-left: 2%;
         }
 
 
@@ -78,7 +73,8 @@
         }
         .Links > button:hover{
             background-color: #df0a2e;
-            color: #535353;
+            color: #ffffff;
+            box-shadow: 0 0 10px #df0a2e;
         }
 
         /* text-------------------------------------------- */
@@ -89,6 +85,7 @@
         #Title{
             font-size: 200%;
             display: inline;
+            padding-left: 2%;
         }
 
         .Links > a{
@@ -113,10 +110,8 @@
 </head>
 <body>
     <nav>
-    <section class="Head">
         <img class="Logo" src="Source/Logo.png">
         <h1 id="Title">DECI Cloud</h1>
-    </section>
     <section class="Links">
         <a href="#Home">Home</a>
         <a href="#Service">Service</a>
