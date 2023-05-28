@@ -9,17 +9,8 @@ html {
      background-size: cover;
      font-family: 'Kanit', sans-serif;
      overflow: hidden;
-     overflow-x: scroll;
  }
 
- main{
-     background-color: #00b3ff;
-     width: 95%;
-     height: 80vh;
-     position: absolute;
-     left: 2.5%;
-     bottom: 1vh;
- }
 
  /* -----------------------------------------------------------
  Nav Menu------------------------------------------------------
@@ -116,29 +107,29 @@ html {
      height: 8vh;
      background-color: #cecece6f;
      border-radius: 2rem;
-     color: #df0a2e;
+     color: #051f62;
      font-size: 150%;
      font-weight: 250%;
      border: 0;
      transition: 0.5s;
  }
  .Links > button:hover{
-     background-color: #df0a2e;
+     background-color: #051f62;
      color: #ffffff;
      animation: breath 5s linear infinite;
      transform: scale(1.1);
  }
  .Links > button:active{
-     background-color: #a80823;
+     background-color: #041747;
      color: #c7c7c7;
  }
 
  @keyframes breath{
-     0%{box-shadow: 0 0 5px #df0a2e;}
-     25%{box-shadow: 0 0 20px #df0a2e;}
-     50%{box-shadow: 0 0 10px #df0a2e;}
-     75%{box-shadow: 0 0 25px #df0a2e;}
-     100%{box-shadow: 0 0 5px #df0a2e;}
+     0%{box-shadow: 0 0 5px #051f62;}
+     25%{box-shadow: 0 0 20px #051f62;}
+     50%{box-shadow: 0 0 10px #051f62;}
+     75%{box-shadow: 0 0 25px #051f62;}
+     100%{box-shadow: 0 0 5px #051f62;}
  }
 
  .menu {
@@ -193,27 +184,57 @@ html {
  ----------------------------------------------------------- */
 
  main{
-    background-color: #00b3ff;
-    width: 500%;
+    width: 100vw;
     height: 80vh;
-    border-radius: 5vh;
     position: absolute;
-    left: 2.5%;
     bottom: 1vh;
+    left: 0;
     overflow-y: hidden;
     overflow-x: scroll;
+}
+
+/* window--------------------------------------------------- */
+
+main .Content{
+    height: 80vh;
+    width: 390vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-/* window--------------------------------------------------- */
-
-main div{
-    background-color: #000000;
+main .Content div{
     height: 75vh;
-    width: 85vw;
+    width: 90vw;
+    background-color: #e6e6e69f;
+    border-radius: 5vw;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+main .Content div:hover{
+    transform: scale(1);
+}
+::-webkit-scrollbar {
+    width: 8px;
+    color: #3b3b3b;
+}
+
+::-webkit-scrollbar-button{
+    border-radius: 100px;
+    background-color: #ffffff69;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: #ffffff69;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+    background-color: #ffffff5e;
+}
+::-webkit-scrollbar-thumb:active{
+    border-radius: 0;
+    background-color: #ffffff4e;
 }
 
 
